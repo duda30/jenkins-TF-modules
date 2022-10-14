@@ -6,6 +6,7 @@ resource "aws_s3_bucket" "bucket-backend" {
   }
 }
 
+
 resource "aws_s3_bucket_acl" "acl-to-my-bucket" {
   bucket = aws_s3_bucket.bucket-backend.id
   acl    = var.bucket-acl
